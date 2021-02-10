@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+	<html> 
+		<head>
+			<title>Soy una página mi pana</title>
+			<meta charset="utf-8"/>
+		</head>
+			<body>
+				<form align="center">
+					<label for="name"> Nombre : </label>
+					<input name="name" type="text"><br><br>
+					<label for="last_name"> Apellido : </label>
+					<input name="last_name" type="text"><br><br>
+					<input type="submit" value="Enviar"></br></br>
+					<%=
+						name = servlet_request.query['name']
+						last_name = servlet_request.query['last_name']
+						if name != nil && last_name != nil && name != ""
+							"Hola #{name} #{last_name}"
+						end
+					%>
+				</form>
+	</html>

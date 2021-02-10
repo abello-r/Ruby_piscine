@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+	<html> 
+		<head>
+			<title>Soy una página mi pana</title>
+			<meta charset="utf-8"/>
+		</head>
+			<body>
+				<form align="center">
+					<label for="name"> Nombre : </label>
+					<input name="name" type="text"><br><br>
+					<label for="last_name"> Apellido: </label>
+					<input name="last_name" type="text"><br><br>
+					<label for="age"> Tu edad : </label>
+					<input name="age" type="number"><br><br>
+					<input type="submit" value="Enviar"></br></br>
+					<%=
+						array1 = Array['Alan', 'Brito', 36]
+						array2 = Array['Esteban', 'Quito', 30]
+						array3 = Array['Elce', 'Nicero', 24]
+						array4 = Array['Alba', 'Ricoque', 18]
+						
+						name = servlet_request.query['name']
+						last_name = servlet_request.query['last_name']
+						age = servlet_request.query['age'].to_i
+						
+						my_array = Array[name, last_name, age]
+						
+						array5 = [array1, array2, array3, array4]
+						array5.push(my_array)
+						x = 0
+						array_def = array5.sort { |a, b| a[2] <=> b[2] }
+						
+						x = array_def.index(my_array)
+						if name && last_name && age && name != "" && last_name != ""
+							"Hola #{name}, tienes más edad que #{x}, y menos edad que #{array_def.size - (x + 1)}"
+						end
+			
+					%>
+				</form>
+	</html>
