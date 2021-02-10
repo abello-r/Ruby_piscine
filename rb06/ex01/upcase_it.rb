@@ -1,8 +1,8 @@
 #!/usr/bin/ruby
 
-def up(str)
-	str.upcase
+def upcase_it(str)
+	str = str.upcase
+	return(str)
 end
 
-var.to_s = "hola"
-up(var)
+puts upcase_it("cuculino")
