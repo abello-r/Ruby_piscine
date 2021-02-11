@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap');
+
+
+.boton{
+
+	background: transparent;
+	color: whitesmoke;
+	align-content: center;
+	text-align: center;
+	font-family: 'Raleway Dots', cursive;
+	border: 1px dotted;
+	font-size: 200% ;
+	border-radius: 6px;
+	padding: 10px 22px;
+
+}
+
+.boton:before{
+	background-color: whitesmoke;
+	color: red;
+}
