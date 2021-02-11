@@ -5,14 +5,4 @@ def downcase_it(str)
 	return(str)
 end
 
-len = ARGV.size
-i = 0
-
-if len == 0
-	puts "none"
-end
-while len > 0
-	puts downcase_it(ARGV[i]) 
-	i += 1
-	len -= 1
-end
+ARGV.each {|e| puts downcase_it(e) }

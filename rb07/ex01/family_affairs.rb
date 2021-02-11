@@ -2,17 +2,16 @@
 
 def encontrar_pelirrojos(hash)
 
-	 hash.each.to_a { |key, value| if value == (:pelirrojo?) then puts "1" end } 
-								 #puts "#{key} is #{value}."}
+	 array = hash.select { |key, value|  value == :pelirrojo }
+	 array.each_key.select { |key, value| key }
+	end
 	
-end
-
-familia_Rebollez = {
-					"Rigoberto" => :pelirrojo,
-					"Anastasia" => :rubio,
-					"Eudovigis" => :moreno,
-					"David" => :pelirrojo,
-					"Francis" => :pelirrojo
-					}
-
-encontrar_pelirrojos(familia_Rebollez)
+	familia_Rebollez = {
+		"Rigoberto" => :pelirrojo,
+		"Anastasia" => :rubio,
+		"Eudovigis" => :moreno,
+		"David" => :pelirrojo,
+		"Francis" => :pelirrojo
+	}
+	
+	p encontrar_pelirrojos(familia_Rebollez)
