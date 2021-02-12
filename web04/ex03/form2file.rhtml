@@ -1,0 +1,30 @@
+	<html> 
+		<head>
+			<title>Soy una página con formulario</title>
+			<meta charset="utf-8"/>
+		</head>
+			<body>
+				<form align="center">
+					<label for="file"> File : </label>
+					<input name="file" type="text"><br><br>
+					<label for="line"> Line : </label>
+					<input name="line" type="Number"><br><br>
+					<label for="value"> Value : </label>
+					<input name="value" type="text"><br><br>
+					<input type="submit" value="Enviar"></br></br>
+				<%=
+					file = servlet_request.query['file'].to_s
+					line = servlet_request.query['line'].to_i
+					value = servlet_request.query['value'].to_s
+					file = "#{file}.txt"
+					if (!file.empty? && !value.empty?)
+						f = File.open("./web04/ex03/#{file}")
+						data = f.readlines
+						data[line - 1] = value + "\n"
+						File.truncate(f, 0)
+						data.each do |l|
+							File.write(f, "#{l}", mode: "a")
+							end
+						f.close
+					end
+				%>

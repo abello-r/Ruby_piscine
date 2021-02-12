@@ -1,6 +1,6 @@
 	<html> 
 		<head>
-			<title>Soy una página mi pana</title>
+			<title>Soy una página con formulario</title>
 			<meta charset="utf-8"/>
 		</head>
 			<body>
@@ -10,11 +10,14 @@
 					<label for="last_name"> Apellido : </label>
 					<input name="last_name" type="text"><br><br>
 					<input type="submit" value="Enviar"></br></br>
-					<%=
+					<%
 						name = servlet_request.query['name']
 						last_name = servlet_request.query['last_name']
+
 						if name != nil && last_name != nil && name != ""
-							"Hola #{name} #{last_name}"
+							File.open("web04/ex02/form.txt", "a") do |file|
+							file.write(name + " ", last_name + "\n")
+							end
 						end
 					%>
 				</form>
