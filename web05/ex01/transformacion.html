@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	
+	</head> 
+		<meta charset="utf-8">
+		<title>Square</title>
+	</head>
+	
+	<style>
+			#square{
+				width:450px;
+				height:450px;
+				background-color: blueviolet;
+			}
+	</style>
+
+	<body>
+		<div id="square"></div>
+	</body>
+
+	<script type="text/javascript">
+		document.getElementById("square").addEventListener("mouseover", function(e){ document.getElementById("square").style.backgroundColor="purple" });
+		document.getElementById("square").addEventListener("mouseleave", function(e){ document.getElementById("square").style.backgroundColor="black" });
+	</script>
+
+</html>

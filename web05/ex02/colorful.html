@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+	
+	<head>
+		<meta charset="utf-8"/>
+	</head>
+		
+		<style>
+			#paragraph
+			{
+				background-color: whitesmoke;
+			}
+		</style>
+
+			<body>
+				<p id="paragraph">Esto es un párrafo</p>
+			</body>
+
+				<script type="text/javascript">
+					document.getElementById("paragraph").addEventListener("click", function(e){ document.getElementById("paragraph").style.backgroundColor="blue" });
+					document.getElementById("paragraph").addEventListener("mouseleave", function(e){ document.getElementById("paragraph").style.backgroundColor="green" });
+				</script>
+</html>

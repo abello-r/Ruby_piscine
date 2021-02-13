@@ -177,3 +177,20 @@ img{
 	font-size: 350%;
 	margin-top: 15%;
 }
+
+.request{
+
+    color:rgb(156, 0, 0);
+    background: whitesmoke;
+    border: 1px dotted;
+    padding: 5px;
+    cursor: pointer;
+    
+}
+
+ruby{
+    color: whitesmoke;
+    margin-left: 25px;
+    margin-top: -15px;
+    font-size: 150%;
+}
