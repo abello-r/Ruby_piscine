@@ -17,9 +17,8 @@
 			<div id="delayMsg" class="items">
 					<form onSubmit="delayRedirect()">
 						<label for="hoja"></label>
-						<input id="hoja" class="request" name="hoja" type="number"><br><br>
+						<input style="margin-left:20px" id="hoja" class="request" name="hoja" type="number"><br><br>
 					</form>
-			</ruby>
 			</div>
 			<div id="delayMsg"></div>
 				<li ></li>
@@ -46,7 +45,7 @@
 
 		if (x == 12 || x == 24)
 		{
-			document.getElementById('delayMsg').innerHTML = '<ruby id="countDown">Buena elección</ruby> seconds....';
+			document.getElementById('delayMsg').innerHTML = '<ruby style="text-align:center"id="countDown">Buena elección</ruby>';
 			var count = 6;
 			setInterval(function()
 			{

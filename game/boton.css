@@ -164,10 +164,24 @@ img{
     border-radius: 6px;
 	border: 1px dotted;
     border-color: whitesmoke;
-    display: flex;
+    
     align-items: center;
     justify-content: center;
 }
+
+.idea{
+    border: none;
+    margin-top: 10px;
+    margin-left: 48.5%;
+}
+
+
+.pacient_life{
+    border: none;
+    margin-top: -15px;
+    margin-left: 44.5%;
+}
+
 
 .preguntas{
 	color: whitesmoke;
