@@ -18,4 +18,4 @@ Luego, dentro de la carpeta "game", está una historia gráfica llamada "Life of
 
 http://localhost:8080/game/ < Una vez iniciado el servidor, entrar por está ruta.
 
-![alt text](https://github.com/abello-r/Ruby_piscine/blob/master/notion.png)
+![alt text](https://github.com/abello-r/Ruby_piscine/blob/master/bb.png)
