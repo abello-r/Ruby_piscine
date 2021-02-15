@@ -7,4 +7,4 @@ Está todo ordenado por niveles de exigencia de menor a mayor, a medida que fui 
 
 https://www.notion.so/Ruby-Piscine-bf93664241414eb4a5645e75825f0d79
 
-![alt text](https://github.com/abello-r/Cub3D/blob/master/srcs/img.png)
+![alt text](https://github.com/abello-r/Ruby_piscine/blob/master/notion.png)
